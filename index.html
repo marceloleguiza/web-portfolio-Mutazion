@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+    <title>ESTAS EN HOI-POI ESTUDIO</title>
+</head>
+
+<body>
+
+    <header>
+    <a href="#" class="logo">
+
+        <img src="/img/Logo_chico.png" alt="">
+        <h2 class="nombre-empresa"> /H-P/</h2>
+    </a>
+    <div>
+        <nav>
+            <a href="" class="nav-link">INICIO</a>
+            <a href="#servicios" class="nav-link"> SERVICIOS </a>
+            <a href="#contacto" class="nav-link">CONTACTO</a>
+        </nav>
+    </div>
+
+ 
+
+    </header>
+
+    <div class="container">
+
+        <div class="left">
+            <div>
+                <h1>HOI-POI</h1>
+                <p> Branding| Creación de Contenido| Desarrollo Web</p>
+                <a href="#servicios"> ENTER</a>
+            </div>
+
+        </div>
+
+        <div class="right">
+           
+        </div>
+    </div>
+
+
+  <!-- SERVICIOS -->
+  <section  id="servicios">
+  <div class="container-servicios" >
+
+    <div class="box" style="--clr:green;">
+     <div class="content">
+        <div class="icon"> <ion-icon name="brush-outline"></ion-icon></div>
+        <div class="text"></div>
+        <h3>BRANDING</h3>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+        <a href="#"> Conocer Mas</a>
+     </div>
+    
+    </div>
+    <div class="box" style="--clr:rgb(238, 135, 0);"> 
+        <div class="content">
+           <div class="icon"> <ion-icon name="code-outline"></ion-icon></div>
+           <div class="text"></div>
+           <h3>DISEÑO Y DESARROLLO WEB</h3>
+           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+           <a href="#"> Conocer Mas</a>
+        </div>
+       
+       </div>
+       <div class="box" style="--clr:rgb(119, 9, 122);">
+        <div class="content">
+           <div class="icon"> <ion-icon name="flash-outline"></ion-icon></div>
+           <div class="text"></div>
+           <h3>CREACION DE CONTENIDO</h3>
+           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+           <a href="#"> Conocer Mas</a>
+        </div>
+       
+       </div>
+  </div>
+
+</section>
+
+<section class="formulario" id="contacto">
+
+
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <h3> CONTACTANOS </h3>
+    <input type="text" id="name" placeholder="Tu Nombre" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="phone" placeholder="Numero de Celular." required>
+    <textarea id="message"  rows="4" placeholder="¿Como Podemos Ayudarte?."></textarea>
+    <button type="submit">Enviar</button>
+
+
+    </form>
+
+
+
+
+</section>
+
+
+
+
+
+
+ 
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+    
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script> 
+ function sendEmail  (){
+    secureToken:
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "hoipoiestudio@gmail.com",
+  
+    From : document.getElementById("email").value,
+    Subject : "Nuevo formulario de consulta",
+    Body : "<br> Email:" + document.getElementById ("name").value
+    + "<br> phone no:" + document.getElementById ("phone").value
+    + "<br>  Message:" + document.getElementById ("message").value
+}).then(
+  message => alert(message)
+);
+
+
+ }
+</script>
+
+
+</body>
+
+</html>
