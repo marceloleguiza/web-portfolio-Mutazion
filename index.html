@@ -1,154 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <link rel="stylesheet" href="main.css">
-
-    <title>ESTAS EN HOI-POI ESTUDIO</title>
+    <title>Esto es Mutazion</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
-
     <header>
-    <a href="#" class="logo">
-
-        <img src="/img/Logo_chico.png" alt="">
-        <h2 class="nombre-empresa"> /H-P/</h2>
-    </a>
-    <div>
         <nav>
-            <a href="" class="nav-link">INICIO</a>
-            <a href="#servicios" class="nav-link"> SERVICIOS </a>
-            <a href="#contacto" class="nav-link">CONTACTO</a>
+            <div class="nav_contenedor"></div>
         </nav>
-    </div>
-
- 
-
     </header>
 
-    <div class="container">
+    <hr class="divider">
 
-        <div class="left">
-            <div>
-                <h1>HOI-POI</h1>
-                <p> Branding| Creación de Contenido| Desarrollo Web</p>
-                <a href="#servicios"> ENTER</a>
-            </div>
+    <div class="gallery">
+        <a href="https://cafecito.app/mutazion" target="_blank">
+            <img src="Aportes/Cafecito.png" alt="Imagen 1">
+        </a>
+        <a href="https://www.paypal.com/donate?hosted_button_id=LQYF6FMYB526E" target="_blank">
+            <img src="Aportes/Paypal.png" alt="Imagen 2">
+        </a>
+        <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f6159c3018f7e1176320737">
+            <img src="Aportes/Suscripcion_A.png" alt="Imagen 3">
+        </a>
+        <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f6159bc018f7e127b230725" target="_blank">
+            <img src="Aportes/Suscripcion_B.png" alt="Imagen 4">
+        </a>
+        <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f6159c3018f7e2111b5073f" target="_blank">
+            <img src="Aportes/Suscripcion_C.png" alt="Imagen 5">
+        </a>
 
-        </div>
+        <p class="somos">
+            Desde los años 90, nos dedicamos al cine fantástico en Argentina. Aunque nuestras películas no sean convencionales, buscamos que todos las vean y nos esforzamos por destacar, evitando ser más de lo mismo. ¡Esto es Mutazion!
+        </p>
 
-        <div class="right">
-           
-        </div>
     </div>
 
-
-  <!-- SERVICIOS -->
-  <section  id="servicios">
-  <div class="container-servicios" >
-
-    <div class="box" style="--clr:green;">
-     <div class="content">
-        <div class="icon"> <ion-icon name="brush-outline"></ion-icon></div>
-        <div class="text"></div>
-        <h3>BRANDING</h3>
-        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
-        <a href="#"> Conocer Mas</a>
-     </div>
+    
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://kick.com/mutazion" target="_blank"><img src="recursos/Banner_Kick.png" alt="Slide 1" ></a> </div>
+            <div class="swiper-slide"><a href="https://youtube.com/playlist?list=PLPF8J9W2xGqB6EHxjE9Mzq0wGYr5XYZCC&si=p1Ce-MSLCb9WWUpJ" target="_blank"><img src="recursos/Banner_peliculas.png" alt="Slide 2"></a></div>
+            <div class="swiper-slide"><a href="https://youtu.be/YrHXeQKM5I4?si=LkjbH_RSyszSDLpE" target="_blank"><img src="recursos/Banner_protocolo.png" alt="Slide 3"></a></div>
+        </div>
     
     </div>
-    <div class="box" style="--clr:rgb(238, 135, 0);"> 
-        <div class="content">
-           <div class="icon"> <ion-icon name="code-outline"></ion-icon></div>
-           <div class="text"></div>
-           <h3>DISEÑO Y DESARROLLO WEB</h3>
-           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
-           <a href="#"> Conocer Mas</a>
-        </div>
-       
-       </div>
-       <div class="box" style="--clr:rgb(119, 9, 122);">
-        <div class="content">
-           <div class="icon"> <ion-icon name="flash-outline"></ion-icon></div>
-           <div class="text"></div>
-           <h3>CREACION DE CONTENIDO</h3>
-           <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
-           <a href="#"> Conocer Mas</a>
-        </div>
-       
-       </div>
-  </div>
 
-</section>
-
-<section class="formulario" id="contacto">
-
-
-    <form onsubmit="sendEmail(); reset(); return false;">
-        <h3> CONTACTANOS </h3>
-    <input type="text" id="name" placeholder="Tu Nombre" required>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="text" id="phone" placeholder="Numero de Celular." required>
-    <textarea id="message"  rows="4" placeholder="¿Como Podemos Ayudarte?."></textarea>
-    <button type="submit">Enviar</button>
-
-
-    </form>
-
-
-
-
-</section>
-
-
-
-
-
-
- 
     <footer>
-        <p>Todos los derechos reservados - 2023</p>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        <div class="redes_sociales">
+            <a href="https://kick.com/mutazion" target="_blank">
+                <img src="recursos/ri_kick-line.png" alt="Kick">
+            </a>
+            <a href="https://www.youtube.com/mutazion" target="_blank">
+                <img src="recursos/mingcute_youtube-line.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/mutazion" target="_blank">
+                <img src="recursos/hugeicons_instagram.png" alt="Instagram">
+            </a>
         </div>
-
     </footer>
-    
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script> 
- function sendEmail  (){
-    secureToken:
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "hoipoiestudio@gmail.com",
-  
-    From : document.getElementById("email").value,
-    Subject : "Nuevo formulario de consulta",
-    Body : "<br> Email:" + document.getElementById ("name").value
-    + "<br> phone no:" + document.getElementById ("phone").value
-    + "<br>  Message:" + document.getElementById ("message").value
-}).then(
-  message => alert(message)
-);
 
-
- }
-</script>
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

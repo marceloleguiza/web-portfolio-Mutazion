@@ -1,0 +1,217 @@
+/* Reset básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el header */
+header {
+    background-image: url('recursos/CINE.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 300px; /* Altura del header para mostrar bien la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente el contenido dentro del header */
+    margin-bottom: 0px; /* Reduce el espacio debajo del header */
+    
+}
+
+/* Contenedor de la navegación */
+.nav_contenedor {
+    width: 100%; /* Ajustar al ancho completo del header */
+    max-width: 1200px; /* Limitar el ancho máximo para mantener el diseño */
+    margin: 0 auto;
+    padding: 0 20px; /* Aumentar el padding para mayor espacio lateral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Estilo para la línea divisoria */
+.divider {
+    border: none;
+    border-top: 1px solid #86ca18; /* Línea de 1px de color gris claro */
+    
+}
+/* Estilo para el párrafo */
+.somos {
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    max-width: 800px;
+    text-align: center;
+    margin: 40px 0 20px; /* Reducir el margen superior e inferior del párrafo */
+   
+}
+
+/* Estilo para el banner */
+.banner {
+    background-image: url(recursos/mutazion_fondo.png);
+    width: 100%;
+    max-width:auto;
+    height: 80px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+.banner img {
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-width:auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+}
+
+.banner img:hover {
+    box-shadow: 0 16px 32px rgba(6, 224, 53, 0.3); /* Sombra más pronunciada al pasar el cursor */
+    transform: scale(1.05); /* Añadir un pequeño zoom al pasar el cursor */
+}
+
+/* Estilo adicional para el carrusel Swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('recursos/mutazion_fondo.png');
+    padding: 75px;
+}
+
+/* Margen superior para la galería */
+.gallery {
+    margin-top: 0; /* Eliminar margen superior */
+}
+
+.gallery a {
+    margin: 10px;
+}
+
+.gallery img {
+    width: 200px; /* Tamaño de las imágenes */
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añadir sombra a las imágenes */
+    transition: box-shadow 0.3s ease; /* Añadir transición para un efecto suave */
+}
+    
+.gallery img:hover {
+    box-shadow: 0 16px 32px rgba(6, 224, 53, 0.3); /* Sombra más pronunciada al pasar el cursor */
+    transform: scale(1.05); /* Añadir un pequeño zoom al pasar el cursor */
+}
+
+
+
+/* Para pantallas más pequeñas que 1200px */
+@media screen and (max-width: 1200px) {
+    .gallery img {
+        width: 180px;
+    }
+}
+
+/* Para pantallas más pequeñas que 992px */
+@media screen and (max-width: 992px) {
+    .gallery {
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 150px;
+    }
+
+    .gallery a:nth-child(-n+3) {
+        margin-bottom: 20px;
+    }
+}
+
+/* Para pantallas más pequeñas que 768px */
+@media screen and (max-width: 768px) {
+    .gallery img {
+        width: 120px;
+    }
+}
+
+/* Para pantallas más pequeñas que 576px */
+@media screen and (max-width: 576px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100px;
+    }
+
+    .gallery a {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo para el footer */
+footer {
+    background-image: url(recursos/mutazion_fondo.png);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+   
+}
+
+/* Estilo para las imágenes de redes sociales */
+.redes_sociales {
+    background-image: url('recursos/mutazion_fondo.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_sociales a {
+    margin: 0 10px; /* Margen entre las imágenes */
+}
+
+.redes_sociales img {
+    width: 60px; /* Tamaño de las imágenes */
+    height:auto;
+    object-fit: contain;
+    
+}
+
+.redes_sociales img:hover {
+    box-shadow: 0 8px 16px rgba(6, 224, 53, 0.3); /* Sombra más pronunciada al pasar el cursor */
+    transform: scale(1.05); /* Añadir un pequeño zoom al pasar el cursor */
+
+}
